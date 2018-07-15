@@ -61,682 +61,682 @@ namespace Dominion.Core.Properties {
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Aldea {
+        public static System.Drawing.Bitmap Aldea {
             get {
                 object obj = ResourceManager.GetObject("Aldea", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] AldeaFinal {
+        public static System.Drawing.Bitmap AldeaFinal {
             get {
                 object obj = ResourceManager.GetObject("AldeaFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Aventurer {
+        public static System.Drawing.Bitmap Aventurer {
             get {
                 object obj = ResourceManager.GetObject("Aventurer", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] AventurerFinal {
+        public static System.Drawing.Bitmap AventurerFinal {
             get {
                 object obj = ResourceManager.GetObject("AventurerFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Banquet {
+        public static System.Drawing.Bitmap Banquet {
             get {
                 object obj = ResourceManager.GetObject("Banquet", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] BanquetFinal {
+        public static System.Drawing.Bitmap BanquetFinal {
             get {
                 object obj = ResourceManager.GetObject("BanquetFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Biblioteca {
+        public static System.Drawing.Bitmap Biblioteca {
             get {
                 object obj = ResourceManager.GetObject("Biblioteca", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] BibliotecaFinal {
+        public static System.Drawing.Bitmap BibliotecaFinal {
             get {
                 object obj = ResourceManager.GetObject("BibliotecaFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Bruixa {
+        public static System.Drawing.Bitmap Bruixa {
             get {
                 object obj = ResourceManager.GetObject("Bruixa", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] BruixaFinal {
+        public static System.Drawing.Bitmap BruixaFinal {
             get {
                 object obj = ResourceManager.GetObject("BruixaFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Burocrata {
+        public static System.Drawing.Bitmap Burocrata {
             get {
                 object obj = ResourceManager.GetObject("Burocrata", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] BurocrataFinal {
+        public static System.Drawing.Bitmap BurocrataFinal {
             get {
                 object obj = ResourceManager.GetObject("BurocrataFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Canceller {
+        public static System.Drawing.Bitmap Canceller {
             get {
                 object obj = ResourceManager.GetObject("Canceller", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] CancellerFinal {
+        public static System.Drawing.Bitmap CancellerFinal {
             get {
                 object obj = ResourceManager.GetObject("CancellerFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Capella {
+        public static System.Drawing.Bitmap Capella {
             get {
                 object obj = ResourceManager.GetObject("Capella", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] CapellaFinal {
+        public static System.Drawing.Bitmap CapellaFinal {
             get {
                 object obj = ResourceManager.GetObject("CapellaFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] CartesEliminades {
+        public static System.Drawing.Bitmap CartesEliminades {
             get {
                 object obj = ResourceManager.GetObject("CartesEliminades", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Coure {
+        public static System.Drawing.Bitmap Coure {
             get {
                 object obj = ResourceManager.GetObject("Coure", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] CoureFinal {
+        public static System.Drawing.Bitmap CoureFinal {
             get {
                 object obj = ResourceManager.GetObject("CoureFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Ducat {
+        public static System.Drawing.Bitmap Ducat {
             get {
                 object obj = ResourceManager.GetObject("Ducat", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] DucatFinal {
+        public static System.Drawing.Bitmap DucatFinal {
             get {
                 object obj = ResourceManager.GetObject("DucatFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Enviat {
+        public static System.Drawing.Bitmap Enviat {
             get {
                 object obj = ResourceManager.GetObject("Enviat", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] EnviatFinal {
+        public static System.Drawing.Bitmap EnviatFinal {
             get {
                 object obj = ResourceManager.GetObject("EnviatFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Espia {
+        public static System.Drawing.Bitmap Espia {
             get {
                 object obj = ResourceManager.GetObject("Espia", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] EspiaFinal {
+        public static System.Drawing.Bitmap EspiaFinal {
             get {
                 object obj = ResourceManager.GetObject("EspiaFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Ferreria {
+        public static System.Drawing.Bitmap Ferreria {
             get {
                 object obj = ResourceManager.GetObject("Ferreria", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] FerreriaFinal {
+        public static System.Drawing.Bitmap FerreriaFinal {
             get {
                 object obj = ResourceManager.GetObject("FerreriaFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Festival {
+        public static System.Drawing.Bitmap Festival {
             get {
                 object obj = ResourceManager.GetObject("Festival", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] FestivalFinal {
+        public static System.Drawing.Bitmap FestivalFinal {
             get {
                 object obj = ResourceManager.GetObject("FestivalFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Finca {
+        public static System.Drawing.Bitmap Finca {
             get {
                 object obj = ResourceManager.GetObject("Finca", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] FincaFinal {
+        public static System.Drawing.Bitmap FincaFinal {
             get {
                 object obj = ResourceManager.GetObject("FincaFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Fossat {
+        public static System.Drawing.Bitmap Fossat {
             get {
                 object obj = ResourceManager.GetObject("Fossat", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] FossatFinal {
+        public static System.Drawing.Bitmap FossatFinal {
             get {
                 object obj = ResourceManager.GetObject("FossatFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Jardins {
+        public static System.Drawing.Bitmap Jardins {
             get {
                 object obj = ResourceManager.GetObject("Jardins", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] JardinsFinal {
+        public static System.Drawing.Bitmap JardinsFinal {
             get {
                 object obj = ResourceManager.GetObject("JardinsFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Laboratori {
+        public static System.Drawing.Bitmap Laboratori {
             get {
                 object obj = ResourceManager.GetObject("Laboratori", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] LaboratoriFinal {
+        public static System.Drawing.Bitmap LaboratoriFinal {
             get {
                 object obj = ResourceManager.GetObject("LaboratoriFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Lladre {
+        public static System.Drawing.Bitmap Lladre {
             get {
                 object obj = ResourceManager.GetObject("Lladre", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] LladreFinal {
+        public static System.Drawing.Bitmap LladreFinal {
             get {
                 object obj = ResourceManager.GetObject("LladreFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Llenyataires {
+        public static System.Drawing.Bitmap Llenyataires {
             get {
                 object obj = ResourceManager.GetObject("Llenyataires", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] LlenyatairesFinal {
+        public static System.Drawing.Bitmap LlenyatairesFinal {
             get {
                 object obj = ResourceManager.GetObject("LlenyatairesFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Malediccio {
+        public static System.Drawing.Bitmap Malediccio {
             get {
                 object obj = ResourceManager.GetObject("Malediccio", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] MalediccioFinal {
+        public static System.Drawing.Bitmap MalediccioFinal {
             get {
                 object obj = ResourceManager.GetObject("MalediccioFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Mercat {
+        public static System.Drawing.Bitmap Mercat {
             get {
                 object obj = ResourceManager.GetObject("Mercat", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] MercatFinal {
+        public static System.Drawing.Bitmap MercatFinal {
             get {
                 object obj = ResourceManager.GetObject("MercatFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Milicia {
+        public static System.Drawing.Bitmap Milicia {
             get {
                 object obj = ResourceManager.GetObject("Milicia", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] MiliciaFinal {
+        public static System.Drawing.Bitmap MiliciaFinal {
             get {
                 object obj = ResourceManager.GetObject("MiliciaFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Mina {
+        public static System.Drawing.Bitmap Mina {
             get {
                 object obj = ResourceManager.GetObject("Mina", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] MinaFinal {
+        public static System.Drawing.Bitmap MinaFinal {
             get {
                 object obj = ResourceManager.GetObject("MinaFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Or {
+        public static System.Drawing.Bitmap Or {
             get {
                 object obj = ResourceManager.GetObject("Or", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] OrFinal {
+        public static System.Drawing.Bitmap OrFinal {
             get {
                 object obj = ResourceManager.GetObject("OrFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Plata {
+        public static System.Drawing.Bitmap Plata {
             get {
                 object obj = ResourceManager.GetObject("Plata", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] PlataFinal {
+        public static System.Drawing.Bitmap PlataFinal {
             get {
                 object obj = ResourceManager.GetObject("PlataFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Prestador {
+        public static System.Drawing.Bitmap Prestador {
             get {
                 object obj = ResourceManager.GetObject("Prestador", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] PrestadorFinal {
+        public static System.Drawing.Bitmap PrestadorFinal {
             get {
                 object obj = ResourceManager.GetObject("PrestadorFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Provincia {
+        public static System.Drawing.Bitmap Provincia {
             get {
                 object obj = ResourceManager.GetObject("Provincia", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] ProvinciaFinal {
+        public static System.Drawing.Bitmap ProvinciaFinal {
             get {
                 object obj = ResourceManager.GetObject("ProvinciaFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Remodelar {
+        public static System.Drawing.Bitmap Remodelar {
             get {
                 object obj = ResourceManager.GetObject("Remodelar", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] RemodelarFinal {
+        public static System.Drawing.Bitmap RemodelarFinal {
             get {
                 object obj = ResourceManager.GetObject("RemodelarFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Revers {
+        public static System.Drawing.Bitmap Revers {
             get {
                 object obj = ResourceManager.GetObject("Revers", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] SalaDelConsell {
+        public static System.Drawing.Bitmap SalaDelConsell {
             get {
                 object obj = ResourceManager.GetObject("SalaDelConsell", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] SalaDelConsellFinal {
+        public static System.Drawing.Bitmap SalaDelConsellFinal {
             get {
                 object obj = ResourceManager.GetObject("SalaDelConsellFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] SaloDelTron {
+        public static System.Drawing.Bitmap SaloDelTron {
             get {
                 object obj = ResourceManager.GetObject("SaloDelTron", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] SaloDelTronFinal {
+        public static System.Drawing.Bitmap SaloDelTronFinal {
             get {
                 object obj = ResourceManager.GetObject("SaloDelTronFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Soterrani {
+        public static System.Drawing.Bitmap Soterrani {
             get {
                 object obj = ResourceManager.GetObject("Soterrani", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] SoterraniFinal {
+        public static System.Drawing.Bitmap SoterraniFinal {
             get {
                 object obj = ResourceManager.GetObject("SoterraniFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] Taller {
+        public static System.Drawing.Bitmap Taller {
             get {
                 object obj = ResourceManager.GetObject("Taller", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Byte[].
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        public static byte[] TallerFinal {
+        public static System.Drawing.Bitmap TallerFinal {
             get {
                 object obj = ResourceManager.GetObject("TallerFinal", resourceCulture);
-                return ((byte[])(obj));
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }
