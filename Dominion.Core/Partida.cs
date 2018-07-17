@@ -6,19 +6,19 @@ namespace Dominion.Core
 {
     public class Partida
     {
-        Jugador[] jugadors;
+
         int jugadorActual;
         LlistaOrdenada<string, int> subministraments;
         public Llista<CartaDominion> Eliminades
         {
             get;private set;
         }
-
+        public Jugador[] Jugadors { get; private set; }
         public Jugador JugadorActual
         {
             get
             {
-                return jugadors[jugadorActual];
+                return Jugadors[jugadorActual];
             }
         }
         public Jugador JugadorEsquerra
@@ -27,8 +27,8 @@ namespace Dominion.Core
             {
                 int posJugadorEsquerra = jugadorActual - 1;
                 if (posJugadorEsquerra < 0)
-                    posJugadorEsquerra += jugadors.Length;
-                return jugadors[posJugadorEsquerra];
+                    posJugadorEsquerra += Jugadors.Length;
+                return Jugadors[posJugadorEsquerra];
             }
         }
         public Jugador JugadorDreta
@@ -36,16 +36,16 @@ namespace Dominion.Core
             get
             {
                 int posJugadorDreta = jugadorActual + 1;
-                if (posJugadorDreta == jugadors.Length)
+                if (posJugadorDreta == Jugadors.Length)
                     posJugadorDreta = 0;
 
-                return jugadors[posJugadorDreta];
+                return Jugadors[posJugadorDreta];
             }
         }
 
         public void AvançaJugador()
         {
-            jugadorActual = jugadorActual + 1 % jugadors.Length;
+            jugadorActual = jugadorActual + 1 % Jugadors.Length;
         }
         public void EliminaCarta(IList<CartaDominion> cartes)
         {
@@ -55,7 +55,7 @@ namespace Dominion.Core
         public void EliminaCarta(CartaDominion carta)
         {
             //posa la carta al pilo de eliminades
-            Eliminades.Insert(0, carta);
+            Eliminades.Push( carta);
         }
         public void GanaCarta(int costMaxim,bool vaADescartadas=true)
         {
@@ -76,7 +76,7 @@ namespace Dominion.Core
             carta = TriaCartes(JugadorActual, "Has guanyat una carta tria una", 1, 1, cartesQuePotAgafar)[0];
             subministraments[carta.NomCarta]--;
             if (vaADescartadas)
-                 JugadorActual.Descartades.Insert(0, carta);
+                 JugadorActual.Descartades.Push(carta);
             else JugadorActual.Ma.Add(carta);
         }
         public bool AgafaCarta(Type carta)

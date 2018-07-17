@@ -18,6 +18,9 @@ namespace Dominion.Core
         }
 
         public int Posicio { get; set; }
+
+
+
         public string Nom { get; set; }
         public Llista<CartaDominion> Ma { get; private set; }
        
@@ -40,7 +43,7 @@ namespace Dominion.Core
             }
         }
 
-        private CartaDominion DonamCartaMazo()
+        public CartaDominion DonamCartaMazo()
         {
             CartaDominion carta=null;
 
@@ -49,8 +52,7 @@ namespace Dominion.Core
 
             if(Mazo.Count>0)
             {
-                carta = Mazo[0];
-                Mazo.RemoveAt(0);
+                carta = Mazo.Pop();
             }
 
             return carta;
@@ -64,7 +66,7 @@ namespace Dominion.Core
 
             return carta != null;
         }
-        private void PosaCartesDescartadesAlMazo()
+        public void PosaCartesDescartadesAlMazo()
         {
             Descartades.Desordena();
             Mazo.AddRange(Descartades);
