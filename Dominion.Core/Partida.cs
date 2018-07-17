@@ -9,10 +9,12 @@ namespace Dominion.Core
 
         int jugadorActual;
         LlistaOrdenada<string, int> subministraments;
+        public int DinersExtra { get; set; }
         public Llista<CartaDominion> Eliminades
         {
-            get;private set;
+            get; private set;
         }
+        public Llista<CartaDominion> Jugada { get; private set; }
         public Jugador[] Jugadors { get; private set; }
         /// <summary>
         /// Es el jugador que reacciona actualment al atac
@@ -59,9 +61,9 @@ namespace Dominion.Core
         public void EliminaCarta(CartaDominion carta)
         {
             //posa la carta al pilo de eliminades
-            Eliminades.Push( carta);
+            Eliminades.Push(carta);
         }
-        public void GanaCarta(int costMaxim,bool vaADescartadas=true)
+        public void GanaCarta(int costMaxim, bool vaADescartadas = true, Type tipusCarta = null)
         {
             //demana al jugador actual que trii una carta del pilo de subministraments amb un cost maxim
             List<CartaDominion> cartesQuePotAgafar = new List<CartaDominion>();
@@ -73,14 +75,15 @@ namespace Dominion.Core
                 if (aux.Value > 0)
                 {
                     carta = CartaDominion.DonamCarta(aux.Key);
-                    if (carta.Cost <= costMaxim)
-                        cartesQuePotAgafar.Add(carta);
+                    if (tipusCarta == null || tipusCarta.IsAssignableFrom(carta.GetType()))
+                        if (carta.Cost <= costMaxim)
+                            cartesQuePotAgafar.Add(carta);
                 }
             }
             carta = TriaCartes(JugadorActual, "Has guanyat una carta tria una", 1, 1, cartesQuePotAgafar)[0];
             subministraments[carta.NomCarta]--;
             if (vaADescartadas)
-                 JugadorActual.Descartades.Push(carta);
+                JugadorActual.Descartades.Push(carta);
             else JugadorActual.Ma.Add(carta);
         }
         public bool AgafaCarta(Type carta)
