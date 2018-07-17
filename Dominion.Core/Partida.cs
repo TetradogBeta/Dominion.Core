@@ -14,6 +14,10 @@ namespace Dominion.Core
             get;private set;
         }
         public Jugador[] Jugadors { get; private set; }
+        /// <summary>
+        /// Es el jugador que reacciona actualment al atac
+        /// </summary>
+        public Jugador JugadorReactiu { get; private set; }
         public Jugador JugadorActual
         {
             get
