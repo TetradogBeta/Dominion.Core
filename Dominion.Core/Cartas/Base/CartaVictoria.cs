@@ -6,7 +6,7 @@ namespace Dominion.Core
 {
     public class CartaVictoria:CartaDominion
     {
-        public override bool EsVictoria => true;
+        public override bool EsCartaDeVictoria => true;
         public int PuntsDeVictoria
         {
             get;

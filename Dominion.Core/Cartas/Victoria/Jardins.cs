@@ -13,7 +13,6 @@ namespace Dominion.Core
         }
         public int PuntsDeVictoria(PiloJugador mazoJugador)
         {
-            //conta la de jardins??
             return mazoJugador.Count / 10;
         }
     }

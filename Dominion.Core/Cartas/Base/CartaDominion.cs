@@ -8,7 +8,7 @@ using Gabriel.Cat.S.Utilitats;
 namespace Dominion.Core
 {
     public delegate void CartaDominionEventHanlder(CartaDominion carta);
-    public abstract class CartaDominion
+    public abstract class CartaDominion:IComparable<CartaDominion>
     {
         public static readonly string[] Cartes;
         public static readonly LlistaOrdenada<string, ResourceImage> DicImatges;
@@ -34,7 +34,7 @@ namespace Dominion.Core
             string nomRevers = nameof(Dominion.Core.Properties.Resources.Revers);
             Cartes = new string[imgsRecursos.Length-2];
             DicImatges = new LlistaOrdenada<string, ResourceImage>();
-
+            //si esta ordenado empezaré por 2 asi quito el primer if :)
             for (int i = 0,j=0; i < imgsRecursos.Length; i++)
                 if (imgsRecursos[i].PropertyType.Equals(tipoArray)) {
                     DicImatges.Add(imgsRecursos[i].Name, new ResourceImage(tipoResources, imgsRecursos[i].Name));
@@ -111,9 +111,9 @@ namespace Dominion.Core
             }
         }
 
-        public virtual bool EsTresor { get => false;  }
-        public virtual bool EsVictoria { get => false;  }
-        public virtual bool EsAccio { get => false;  }
+        public virtual bool EsCartaDeTresor { get => false;  }
+        public virtual bool EsCartaDeVictoria { get => false;  }
+        public virtual bool EsCartaDeAccio { get => false;  }
         public int Cost { get; protected set; }
         public int Valor { get; protected set; }
 
@@ -122,6 +122,92 @@ namespace Dominion.Core
             ImgAnvers.Dispose();
             ImgRevers.Dispose();
             ImgFinMazo.Dispose();
+        }
+        public int CompareTo(CartaDominion other)
+        {
+            //victoria,accio,tresor
+            //de mes a menys punts de cost
+            int valor;
+            if (other.EsCartaDeVictoria)
+            {
+                if (EsCartaDeVictoria)
+                    valor = Cost - other.Cost;
+                else
+                    valor = -1;
+
+            }
+            else if (other.EsCartaDeAccio)
+            {
+                if (EsCartaDeVictoria)
+                    valor = 1;
+                else if (EsCartaDeAccio)
+                    valor = Cost - other.Cost;
+                else
+                    valor = -1;
+            }
+            else
+            {
+                if (EsCartaDeVictoria)
+                    valor = 1;
+                else if (EsCartaDeAccio)
+                    valor = -1;
+                else
+                    valor = Cost - other.Cost;
+            }
+            return valor;
+
+        }
+
+        public static CartaDominion DonamCarta(string nomCarta)
+        {
+            Type tipus;
+            CartaDominion carta;
+            string tipusCarta = "Dominion.Core";
+            switch (nomCarta)
+            {
+                case "Aldea":
+                case "Aventurer":
+                case "Banquet":
+                case "Biblioteca":
+                case "Bruixa":
+                case "Burocrata":
+                case "Canceller":
+                case "Capella":
+                case "Enviat":
+                case "Espia":
+                case "Ferreria":
+                case "Festival":
+                case "Fossat":
+                case "Laboratori":
+                case "Lladre":
+                case "Llenyataires":
+                case "Mercat":
+                case "Milicia":
+                case "Mina":
+                case "Prestador":
+                case "Remodelar":
+                case "SalaDelConsell":
+                case "SalaDelTron":
+                case "Soterrani":
+                case "Taller":
+                    tipusCarta = ".CartaAccio." + nomCarta ; break;
+                case "Coure":
+                case "Or":
+                case "Plata":
+                    tipusCarta = ".CartaTresor." + nomCarta; break;
+                case "Ducat":
+                case "Finca":
+                case "Jardins":
+                case "Malediccio":
+                case "Provincia":
+                    tipusCarta = ".CartaVictoria." + nomCarta ; break;
+            }
+
+
+             tipus = Type.GetType(tipusCarta);
+             carta = Activator.CreateInstance(tipus) as CartaDominion;
+
+            return carta;
         }
     }
 }

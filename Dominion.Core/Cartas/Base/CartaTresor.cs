@@ -6,6 +6,6 @@ namespace Dominion.Core
 {
     public class CartaTresor:CartaDominion
     {
-        public override bool EsTresor => true;
+        public override bool EsCartaDeTresor => true;
     }
 }
