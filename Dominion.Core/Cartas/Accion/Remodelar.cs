@@ -23,7 +23,7 @@ namespace Dominion.Core
 
             if(partida.JugadorActual.Ma.Count>0)
             {
-                partida.GanaCarta(cartaARemodelar[0].Cost + 2);
+                partida.GuanyaCarta(cartaARemodelar[0].Cost + 2);
                 partida.EliminaCarta(cartaARemodelar);
                 partida.JugadorActual.Ma.Remove(cartaARemodelar[0]);
             }

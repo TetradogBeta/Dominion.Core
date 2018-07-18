@@ -13,7 +13,7 @@ namespace Dominion.Core
         public override void ExecutaAccio(Partida partida)
         {
             partida.EliminaCarta(this);
-            partida.GanaCarta(5);
+            partida.GuanyaCarta(5);
         }
     }
 }

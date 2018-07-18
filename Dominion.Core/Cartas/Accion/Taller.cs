@@ -12,7 +12,7 @@ namespace Dominion.Core
         }
         public override void ExecutaAccio(Partida partida)
         {
-            partida.GanaCarta(4);
+            partida.GuanyaCarta(4);
         }
     }
 }

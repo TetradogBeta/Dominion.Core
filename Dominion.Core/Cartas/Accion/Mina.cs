@@ -21,7 +21,7 @@ namespace Dominion.Core
                 {
                     partida.EliminaCarta(cartesTresor);
                     partida.JugadorActual.Ma.RemoveRange(cartesTresor);
-                    partida.GanaCarta(cartesTresor[0].Cost + 3, false, typeof(CartaTresor));
+                    partida.GuanyaCarta(cartesTresor[0].Cost + 3, false, typeof(CartaTresor));
 
                 }
             }

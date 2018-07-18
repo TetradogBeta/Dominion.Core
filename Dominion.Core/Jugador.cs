@@ -72,5 +72,40 @@ namespace Dominion.Core
             Mazo.AddRange(Descartades);
             Descartades.Clear();
         }
+        public void PosarTotesLesCartesAlMazo()
+        {
+            Mazo.AddRange(Ma);
+            Ma.Clear();
+            Mazo.AddRange(CartesMostrades);
+            CartesMostrades.Clear();
+            Mazo.AddRange(Descartades);
+            Descartades.Clear();
+        }
+        public int PuntuacioFinal()
+        {
+            int puntuacio = 0;
+            IList<CartaVictoria> cartaVictorias;
+            PosarTotesLesCartesAlMazo();
+            cartaVictorias = Mazo.Filtra((c) => c is CartaVictoria).Casting<CartaVictoria>();
+            for(int i=0;i<cartaVictorias.Count;i++)
+                if(!(cartaVictorias[i] is Jardins))
+                {
+                    puntuacio += cartaVictorias[i].Valor;
+                }
+                else
+                {
+                    puntuacio += (cartaVictorias[i] as Jardins).PuntsDeVictoria(Mazo);
+                }
+
+            return puntuacio;
+        }
+
+        public void Reset()
+        {
+            CartesMostrades.Clear();
+            Ma.Clear();
+            Mazo.Clear();
+            Descartades.Clear();
+        }
     }
 }
