@@ -11,7 +11,7 @@ namespace Dominion.Core
             Cost = 4;
           
         }
-        public int PuntsDeVictoria(PiloJugador mazoJugador)
+        public new int PuntsDeVictoria(IList<CartaDominion> mazoJugador)
         {
             return mazoJugador.Count / 10;
         }
