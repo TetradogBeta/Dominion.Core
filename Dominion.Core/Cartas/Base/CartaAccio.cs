@@ -23,7 +23,7 @@ namespace Dominion.Core
             get;
             set;
         }
-        public virtual bool EsCartaAtac => true;
+        public virtual bool EsCartaAtac => false;
         public virtual bool EsCartaReaccio => false;
 
         public virtual void ExecutaAccio(Partida partida)

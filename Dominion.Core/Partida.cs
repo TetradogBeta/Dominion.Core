@@ -156,7 +156,7 @@ namespace Dominion.Core
             {
                 if (puntuacions[i] == puntuacioMax)
                 {
-                    PreguntaAlJugador(Jugadors[i], "Has Guanyat el joc!", "OK");
+                    PreguntaAlJugador(Jugadors[i], "Has Guanyat el joc!", "OK");//hay que mirar los turnos jugados...el que tenga menos gana sino comparten la victoria
                     guanyadorsPartidaAnterior.Add(i);
                 }
                 else

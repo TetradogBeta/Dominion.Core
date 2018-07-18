@@ -11,6 +11,7 @@ namespace Dominion.Core
         {
             Cost = 4;
         }
+        public override bool EsCartaAtac => true;
         public override void ExecutaAccio(Partida partida)
         {
             CartaDominion[] cartes = new CartaDominion[2];
@@ -19,7 +20,7 @@ namespace Dominion.Core
             CartaDominion cartaTriada;
             IList<CartaDominion> cartesEliminades;
             for (int i = 0; i < partida.Jugadors.Length; i++)
-                if (partida.Jugadors[i].Posicio != partida.JugadorActual.Posicio)
+                if (partida.Jugadors[i].Posicio != partida.JugadorActual.Posicio&&!partida.Jugadors[i].Protegit(partida))
                 {
                     cartaTriada = null;
                     cartes[0] = partida.Jugadors[i].DonamCartaMazo();

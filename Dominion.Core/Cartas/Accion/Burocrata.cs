@@ -11,6 +11,7 @@ namespace Dominion.Core
         {
             Cost = 4;
         }
+        public override bool EsCartaAtac => true;
         public override void ExecutaAccio(Partida partida)
         {
             IList<CartaDominion> cartes;
@@ -18,7 +19,7 @@ namespace Dominion.Core
                 partida.JugadorActual.Mazo.Push(new Plata());
             for (int i = 0; i < partida.Jugadors.Length; i++)
             {
-                if (partida.Jugadors[i].Posicio != partida.JugadorActual.Posicio)
+                if (partida.Jugadors[i].Posicio != partida.JugadorActual.Posicio&&!partida.Jugadors[i].Protegit(partida))
                 {
                     cartes = partida.Jugadors[i].Ma.Filtra((carta) => carta.EsCartaDeVictoria);
                     if (cartes.Count > 0)

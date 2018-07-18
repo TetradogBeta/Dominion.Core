@@ -2,6 +2,7 @@
 using Gabriel.Cat.S.Utilitats;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Dominion.Core
 {
@@ -23,7 +24,9 @@ namespace Dominion.Core
 
         public string Nom { get; set; }
         public Llista<CartaDominion> Ma { get; private set; }
+
        
+
         public Llista<CartaDominion> Descartades { get; private set; }
         public Llista<CartaDominion> Mazo { get; private set; }
         //las cartas mostradas a veces vuelven al mazo otras van a otro jugador y tambien van a descartadas
@@ -56,6 +59,14 @@ namespace Dominion.Core
             }
 
             return carta;
+        }
+        public bool Protegit(Partida partida)
+        {
+            Fossat fossat = Ma.Filtra((c) => c is Fossat).FirstOrDefault() as Fossat;
+            bool protegit = fossat != null;
+            if (protegit)
+                protegit = fossat.Reaccio(partida, this);
+            return protegit;
         }
         public bool Roba()
         {

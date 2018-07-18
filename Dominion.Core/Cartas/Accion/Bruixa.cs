@@ -11,11 +11,12 @@ namespace Dominion.Core
             CartesAdicionals = 2;
             Cost = 5;
         }
+        public override bool EsCartaAtac => true;
         public override void ExecutaAccio(Partida partida)
         {
 
             for (int i = 0; i < partida.Jugadors.Length; i++)
-                if (partida.Jugadors[i].Posicio != partida.JugadorActual.Posicio)
+                if (partida.Jugadors[i].Posicio != partida.JugadorActual.Posicio&&!partida.Jugadors[i].Protegit(partida))
                     if (partida.AgafaCarta(typeof(Malediccio)))
                         partida.Jugadors[i].Descartades.Add(new Malediccio());
         }

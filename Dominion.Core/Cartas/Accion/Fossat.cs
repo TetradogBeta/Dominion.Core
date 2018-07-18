@@ -11,20 +11,20 @@ namespace Dominion.Core
         {
             Cost = 2;
         }
-        public override bool EsCartaAtac => false;
+
         public override bool EsCartaReaccio => true;
-        public override void ExecutaAccio(Partida partida)
+        public  bool Reaccio(Partida partida,Jugador jugador)
         {
             bool quiereEnseñarla;
-            quiereEnseñarla = partida.PreguntaAlJugador(partida.JugadorReactiu,"Vols protegirte de l'atac?","Si","No")==0;
+            quiereEnseñarla = partida.PreguntaAlJugador(jugador,"Vols protegirte de l'atac?","Si","No")==0;
             if(quiereEnseñarla)
             {
-                partida.JugadorReactiu.CartesMostrades.Add(partida.JugadorReactiu.Ma.Filtra((c) => c is Fossat)[0]);
-                partida.JugadorReactiu.Ma.RemoveRange(partida.JugadorReactiu.CartesMostrades);
+                jugador.CartesMostrades.Add(partida.JugadorReactiu.Ma.Filtra((c) => c is Fossat)[0]);
+                partida.PreguntaAlJugador(partida.JugadorActual, string.Format("{0} s'ha protegit", partida.JugadorReactiu.Nom), "Ok");
+                jugador.CartesMostrades.Clear();
 
             }
-            partida.PreguntaAlJugador(partida.JugadorActual, string.Format("{0} s'ha protegit", partida.JugadorReactiu.Nom), "Ok");
-            //lo que no se ahora si el jugador pierde la carta o no...
+            return quiereEnseñarla;
 
 
         }
