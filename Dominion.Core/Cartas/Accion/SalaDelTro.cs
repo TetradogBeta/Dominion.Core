@@ -24,7 +24,7 @@ namespace Dominion.Core
                 //La carta triada ha d'anar amb les cartes que juga la partida perque sino podria utilitzar la sala del tro moltes vegades tenint només dues cartes
                 //s'ha de mirar que faci l'acció correctament...
                 partida.JugadorActual.Ma.Remove(carta);
-                partida.JugadorActual.CartesMostrades.Add(carta);
+                partida.Jugada.Add(carta);
                 carta.ExecutaAccio(partida);
                 carta.ExecutaAccio(partida);
        
