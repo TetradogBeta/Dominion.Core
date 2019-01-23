@@ -5,24 +5,27 @@ using System.Linq;
 using Gabriel.Cat.S.Extension;
 namespace Dominion.Core
 {
-    public class Partida
+    public abstract class Partida
     {
+        static readonly int[] QuatreJugadors = new int[] { 0, 1, 2, 3 };
+        static readonly int[] TresJugadors = new int[] { 0, 1, 2 };
+
         List<int> guanyadorsPartidaAnterior;
         int jugadorActual;
         LlistaOrdenada<string, int> subministraments;
+
         public int DinersExtra { get; set; }
-        public Llista<CartaDominion> Eliminades
-        {
-            get; private set;
-        }
+        public Llista<CartaDominion> Eliminades { get; private set; }
         public Llista<CartaDominion> Jugada { get; private set; }
         public Jugador[] Jugadors { get; private set; }
+
         public Partida(string[] jugadors, string[] tipusCartesSubmnistraments)
         {
             if (jugadors.Length < 2 || jugadors.Length > 4)
                 throw new ArgumentOutOfRangeException("jugador");
             if (tipusCartesSubmnistraments.Length != 10)
                 throw new ArgumentException("Han d'haver 10 tipus de subministraments");
+
             Jugadors = new Jugador[jugadors.Length];
             for (int i = 0; i < jugadors.Length; i++)
                 Jugadors[i] = new Jugador(i, jugadors[i]);
@@ -122,14 +125,14 @@ namespace Dominion.Core
             }
             else if (guanyadorsPartidaAnterior.Count == 3 && Jugadors.Length == 4)
             {
-                jugadorActual = new int[] { 0, 1, 2, 3 }.Except(guanyadorsPartidaAnterior).First();
+                jugadorActual = QuatreJugadors.Except(guanyadorsPartidaAnterior).First();
             }
             else
             {
                 if (Jugadors.Length == 4)
-                    aux = new int[] { 0, 1, 2, 3 };
+                    aux = QuatreJugadors;
                 else if (Jugadors.Length == 3)
-                    aux = new int[] { 0, 1, 2 };
+                    aux = TresJugadors;
 
                 aux = aux.Except(guanyadorsPartidaAnterior).ToArray();
                 aux.Desordena();
@@ -143,6 +146,7 @@ namespace Dominion.Core
             int[] puntuacions = new int[Jugadors.Length];
             int puntuacioJugadorActual;
             int puntuacioMax=0;
+
             guanyadorsPartidaAnterior.Clear();
             for (int i = 0; i < Jugadors.Length; i++)
             {
@@ -210,11 +214,9 @@ namespace Dominion.Core
                 subministraments[carta.Name]--;
             return agafada;
         }
-        public int PreguntaAlJugador(Jugador jugador, string contingut, params string[] opcions)
-        {
-            //pregunta al jugador i retorna la posició en la array d'opcions triada
-            throw new NotImplementedException();
-        }
+        //pregunta al jugador i retorna la posició en la array d'opcions triada
+        public abstract int PreguntaAlJugador(Jugador jugador, string contingut, params string[] opcions);
+        
         /// <summary>
         /// demana al jugador que trii unes cartes de la seva ma
         /// </summary>
@@ -226,12 +228,9 @@ namespace Dominion.Core
         {
             return TriaCartes(jugador, contingut, minimCartes, maximCartes, jugador.Ma);
         }
-
-        public CartaDominion[] TriaCartes(Jugador jugador, string continugt, int minimCartes, int maximCartes, IList<CartaDominion> cartes)
-        {
-            //demana al jugador que que trii entre les cartes
-            throw new NotImplementedException();
-        }
+        //demana al jugador que que trii entre les cartes
+        public abstract CartaDominion[] TriaCartes(Jugador jugador, string continugt, int minimCartes, int maximCartes, IList<CartaDominion> cartes);
+        
         public void RevelaCartesMazo(Jugador jugador, int numCartes)
         {
             //enseña a tots el jugadors les cartes que surten del mazo del jugador
