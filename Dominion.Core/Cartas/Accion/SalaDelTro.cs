@@ -21,7 +21,10 @@ namespace Dominion.Core
                 if (cartesAccio.Count > 1)
                      carta = (CartaAccio)partida.TriaCartes(partida.JugadorActual, "Tria la carta a repetir la acció", 1, 1, cartesAccio)[0];
                 else carta = cartesAccio[0] as CartaAccio;
-
+                //La carta triada ha d'anar amb les cartes que juga la partida perque sino podria utilitzar la sala del tro moltes vegades tenint només dues cartes
+                //s'ha de mirar que faci l'acció correctament...
+                partida.JugadorActual.Ma.Remove(carta);
+                partida.JugadorActual.CartesMostrades.Add(carta);
                 carta.ExecutaAccio(partida);
                 carta.ExecutaAccio(partida);
        
