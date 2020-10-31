@@ -190,17 +190,17 @@ namespace Dominion.Core
                 case "SalaDelTron":
                 case "Soterrani":
                 case "Taller":
-                    tipusCarta = ".CartaAccio." + nomCarta ; break;
+                    tipusCarta += ".CartaAccio." + nomCarta ; break;
                 case "Coure":
                 case "Or":
                 case "Plata":
-                    tipusCarta = ".CartaTresor." + nomCarta; break;
+                    tipusCarta += ".CartaTresor." + nomCarta; break;
                 case "Ducat":
                 case "Finca":
                 case "Jardins":
                 case "Malediccio":
                 case "Provincia":
-                    tipusCarta = ".CartaVictoria." + nomCarta ; break;
+                    tipusCarta += ".CartaVictoria." + nomCarta ; break;
             }
 
 
