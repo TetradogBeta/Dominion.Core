@@ -20,7 +20,7 @@ namespace Dominion.Core
             JugadorLan jugadorLan = JugadorsLan[jugador.Posicio];
             for (int i = 0; i < JugadorsLan.Length; i++)
                 if (jugador.Posicio != i)
-                    JugadorsLan[i].InformaAccio(JugadorsLan[i], "@preguntant");
+                    JugadorsLan[i].InformaAccio(JugadorsLan[jugador.Posicio], "@preguntant");
             return jugadorLan.Pregunta(contingut, opcions);
         }
 
@@ -29,7 +29,7 @@ namespace Dominion.Core
             JugadorLan jugadorLan = JugadorsLan[jugador.Posicio];
             for (int i = 0; i < JugadorsLan.Length; i++)
                 if (jugador.Posicio != i)
-                    JugadorsLan[i].InformaAccio(JugadorsLan[i], "@triaCartes");
+                    JugadorsLan[i].InformaAccio(JugadorsLan[jugador.Posicio], "@triaCartes");
             return jugadorLan.TriaCartes(continugt, minimCartes, maximCartes, cartes);
         }
     }
